@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+
+{% block main %}
+   <table class="table table-striped">
+        <thead>
+            <tr>
+                <th><div style="text-align:left">Symbol</div></th>
+                <th><div style="text-align:left">Shares</div></th>
+                <th><div style="text-align:left">Price</div></th>
+                <th><div style="text-align:left">Transacted</div></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(length) %}
+                <tr>
+                    <td><div style="text-align:left">{{ symbols[i] }}</div></td>
+                    <td><div style="text-align:left">{{ shares[i] }}</div></td>
+                    <td><div style="text-align:left">{{ prices[i] }}</div></td>
+                    <td><div style="text-align:left">{{ dates[i] }}</div></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
