@@ -26,7 +26,7 @@ def index():
     """Render map"""
     return render_template("index.html")
 
-
+# TODO
 @app.route("/articles")
 def articles():
     """Look up articles for geo"""
@@ -45,7 +45,7 @@ def articles():
     else:
         return jsonify(articles)
 
-
+# TODO
 @app.route("/search")
 def search():
     """Search for places that match query"""

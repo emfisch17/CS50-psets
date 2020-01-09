@@ -59,7 +59,7 @@ $(document).ready(function() {
 
 });
 
-
+// TODO
 // Add marker for place to map
 function addMarker(place)
 {
@@ -165,7 +165,7 @@ function configure()
     $("#q").focus();
 }
 
-
+// TODO
 // Remove markers from map
 function removeMarkers()
 {
